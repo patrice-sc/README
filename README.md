@@ -10,6 +10,7 @@ Note: redaction work is AI-assisted, but performed under strict directions and f
 
 - [Installation](#installation)
 - [Tooling](#tooling)
+- [Web Platform APIs](#web-platform-apis)
 - [Git Conventions](#git-conventions)
 - [Data Metadata and Lineage](#data-metadata-and-lineage)
 - [Open Cybersecurity Schema Framework](#open-cybersecurity-schema-framework)
@@ -82,6 +83,19 @@ When practical, prefer the app's built-in auto-update flow.
 - [WSL Container public preview announcement](https://devblogs.microsoft.com/commandline/wsl-container-is-now-available-for-public-preview/)
 
 While WSL container support is interesting, my current day-to-day setup uses [Podman for Windows](https://github.com/podman-container-tools/podman/blob/main/docs/tutorials/podman-for-windows.md).
+
+## Web Platform APIs
+
+The [MDN Web APIs index](https://developer.mozilla.org/en-US/docs/Web/API) is a useful entry point for browser capabilities covering areas such as the DOM, networking, storage, workers, media, graphics, and device integration.
+
+Among them, the [Navigation API](https://developer.mozilla.org/en-US/docs/Web/API/Navigation_API) provides a centralized way to initiate, observe, and intercept navigation. It is particularly useful for same-document navigation in single-page applications and addresses limitations of combining the History API with separate link, form, and `popstate` handling. Check compatibility for target browsers and individual API features before adoption.
+
+Other APIs worth investigating (to be continued):
+
+- [View Transition API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API) for animated transitions between DOM states in single-page applications and between documents in multi-page applications.
+- [WebGPU API](https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API) for modern GPU-accelerated graphics and general-purpose computation.
+- [`<dialog>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog) for native modal and non-modal dialogs, including focus management, Escape-to-close behavior, and form submission with `method="dialog"`.
+- [Popover API](https://developer.mozilla.org/en-US/docs/Web/API/Popover_API) and the [`popover` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/popover) for lightweight, top-layer UI such as menus, tooltips, and command palettes. Use `popovertarget` and `popovertargetaction` on buttons for declarative show, hide, and toggle triggers.
 
 ## Git Conventions
 
