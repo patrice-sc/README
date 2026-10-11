@@ -10,6 +10,8 @@ Note: redaction work is AI-assisted, but performed under strict directions and f
 
 - [Installation](#installation)
 - [Tooling](#tooling)
+- [Data Metadata and Lineage](#data-metadata-and-lineage)
+- [Open Cybersecurity Schema Framework](#open-cybersecurity-schema-framework)
 - [.NET Framework Modernization ->](DOTNET_FRAMEWORK_MODERNIZATION.md) (same site, separate file)
 
 ## Installation
@@ -79,3 +81,15 @@ When practical, prefer the app's built-in auto-update flow.
 - [WSL Container public preview announcement](https://devblogs.microsoft.com/commandline/wsl-container-is-now-available-for-public-preview/)
 
 While WSL container support is interesting, my current day-to-day setup uses [Podman for Windows](https://github.com/podman-container-tools/podman/blob/main/docs/tutorials/podman-for-windows.md).
+
+## Data Metadata and Lineage
+
+- [Apache Ossie (incubating)](https://ossie.apache.org/), formerly Open Semantic Interchange (OSI), defines a vendor-neutral specification for exchanging semantic metadata across analytics, AI, and business intelligence platforms.
+- [OpenMetadata](https://open-metadata.org/) builds a metadata knowledge graph that connects data assets, documentation, organizational policies, and other context for discovery, governance, and use by people and AI agents.
+- [OpenLineage](https://openlineage.io/) provides an open standard, API, libraries, and integrations for collecting lineage events about datasets, jobs, and runs. This helps trace failures and assess the downstream impact of changes.
+
+## Open Cybersecurity Schema Framework
+
+[OCSF](https://ocsf.io/) is an open-source, vendor-neutral framework for normalizing security data. Its common taxonomy, attribute dictionary, and data types help producers and consumers map different security event formats to a shared schema for ingestion, threat detection, and investigation.
+
+The framework is independent of storage, collection, and ETL technologies. Its definitions and normative schema use JSON; the interactive [OCSF Schema Browser](https://schema.ocsf.io/) documents event classes, objects, attributes, profiles, and extensions.
