@@ -10,6 +10,7 @@ Note: redaction work is AI-assisted, but performed under strict directions and f
 
 - [Installation](#installation)
 - [Tooling](#tooling)
+- [Git Conventions](#git-conventions)
 - [Data Metadata and Lineage](#data-metadata-and-lineage)
 - [Open Cybersecurity Schema Framework](#open-cybersecurity-schema-framework)
 - [.NET Framework Modernization ->](DOTNET_FRAMEWORK_MODERNIZATION.md) (same site, separate file)
@@ -81,6 +82,12 @@ When practical, prefer the app's built-in auto-update flow.
 - [WSL Container public preview announcement](https://devblogs.microsoft.com/commandline/wsl-container-is-now-available-for-public-preview/)
 
 While WSL container support is interesting, my current day-to-day setup uses [Podman for Windows](https://github.com/podman-container-tools/podman/blob/main/docs/tutorials/podman-for-windows.md).
+
+## Git Conventions
+
+- [Conventional Branch](https://conventionalbranch.org/) defines readable, purpose-driven branch names using the `<type>/<description>` structure, such as `feature/add-login` or `fix/header-layout`.
+- [Conventional Commits](https://www.conventionalcommits.org/en/) defines structured commit messages such as `feat(api): add search endpoint`. The format communicates features, fixes, and breaking changes and can support automated changelogs and semantic versioning.
+- As noted by the author of [Gitflow](https://nvie.com/posts/a-successful-git-branching-model/), Gitflow was intended for explicitly versioned software, scheduled release cycles, or products that must support multiple versions in the wild; teams delivering frequently through continuous delivery may be better served by a simpler workflow.
 
 ## Data Metadata and Lineage
 
